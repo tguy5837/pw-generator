@@ -10,7 +10,7 @@ var specialSet = ["!@#$%&*_-<>/"];
 
 // Generate Password function
 function generatePassword() {
-  // Clear old generating data
+  // Reset old data
   var generatedPW = "";
   var generateOptions = "";
 
@@ -25,10 +25,10 @@ function generatePassword() {
   }
 
   // 2. Prompt use for other password criteria (must choose at least one)
-  var lowerCase = window.confirm("Click 'Confirm' to include lowercase letters.");
-  var upperCase = window.confirm("Click 'Confirm' to include uppercase letters.");
-  var numbers = window.confirm("Click 'Confirm' to include numbers.");
-  var special = window.confirm("Click 'Confirm' to include special characters.");
+  var lowerCase = window.confirm("Click 'OK' to include lowercase letters.");
+  var upperCase = window.confirm("Click 'OK' to include uppercase letters.");
+  var numbers = window.confirm("Click 'OK' to include numbers.");
+  var special = window.confirm("Click 'OK' to include special characters.");
 
   // 3. Validate the input
   while (!lowerCase && !upperCase && !numbers && !special) {
